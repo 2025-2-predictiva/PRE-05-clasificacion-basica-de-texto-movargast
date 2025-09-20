@@ -15,10 +15,10 @@ def test_01():
         compression="zip",
     )
 
-    with open("homework/clf.pickle", "rb") as file:
+    with open("homework/clf.pkl", "rb") as file:
         clf = pickle.load(file)
 
-    with open("homework/vectorizer.pickle", "rb") as file:
+    with open("homework/vectorizer.pkl", "rb") as file:
         vectorizer = pickle.load(file)
 
     accuracy = accuracy_score(
